@@ -5,6 +5,7 @@ import BpkText from 'bpk-component-text';
 import { BpkGridContainer, BpkGridRow, BpkGridColumn } from 'bpk-component-grid';
 
 import STYLES from './App.scss';
+import Autosuggest from './Autosuggest';
 
 const c = className => STYLES[className] || 'UNKNOWN';
 
@@ -27,6 +28,7 @@ const App = () => (
               To get started, edit <BpkCode>src/App.jsx</BpkCode> and save to reload.
             </BpkText>
             <BpkButton onClick={() => alert('It works!')}>Click me</BpkButton>
+            <Autosuggest />
           </BpkGridColumn>
         </BpkGridRow>
       </BpkGridContainer>
